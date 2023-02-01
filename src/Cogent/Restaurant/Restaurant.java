@@ -7,7 +7,10 @@ public class Restaurant {
 		Customer customer=new Customer();
 		customer.setCustomerName("Huy");
 		Waiter waiter=new Waiter();
-		waiter.takeOrder();
+		waiter.takeOrder(customer);
+		customer.eat();
+		Bill bill=new Bill();
+		bill.generateBill(customer);
 	}
 
 }
